@@ -1694,6 +1694,21 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
   window.q2Done = q2Done;          // make guards use 17
   window.isQ2Complete = q2Done;    // override earlier patches
   setTimeout(sync,0);
+  <script>
+(function(){
+  const btn = document.getElementById('submitAll');
+  if(!btn) return;
+  const original = btn.onclick;
+  function complete(){ return document.querySelectorAll('#list-q2 .pill.selected').length >= 17; }
+  function sync(){ btn.disabled = !complete(); }
+  document.addEventListener('click', e => { if(e.target.classList?.contains('pill')) setTimeout(sync,0); }, true);
+  btn.addEventListener('mousedown', function(ev){
+    if (complete()){
+      ev.stopImmediatePropagation(); ev.preventDefault();
+      if (typeof original === 'function') original.call(btn, ev); // runs the real submit (show('finish'))
+    }
+  }, true);
+  sync();
   })()
 </script>
 </body>
