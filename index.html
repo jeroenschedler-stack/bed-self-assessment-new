@@ -1683,6 +1683,17 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
       if (m) return parseInt(m[1],10);
     }
     return 0;
+    <script>
+      
+(function(){
+  function q2Done(){ return document.querySelectorAll('#list-q2 .pill.selected').length >= 17; }
+  function sync(){ var b=document.getElementById('submitAll'); if(b) b.disabled = !q2Done(); }
+  document.addEventListener('click', e => {
+    if (e.target && e.target.classList && e.target.classList.contains('pill')) setTimeout(sync,0);
+  }, true);
+  window.q2Done = q2Done;          // make guards use 17
+  window.isQ2Complete = q2Done;    // override earlier patches
+  setTimeout(sync,0);
   })()
 </script>
 </body>
