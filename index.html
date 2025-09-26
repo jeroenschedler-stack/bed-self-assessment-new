@@ -5,6 +5,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>BED HOSPITALITY — Self-Assessment</title>
 
+
 <style>
 /* === FINAL consolidated fixes === */
 @media print {
@@ -15,6 +16,7 @@
     font-size: 12px !important;
     text-align: left !important;
   }
+
 
   /* --- STATEMENTS header bar alignment --- */
   #pdfReport .statements-bar {
@@ -41,6 +43,7 @@
 }
 </style>
 
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>BED HOSPITALITY — Self-Assessment</title>
@@ -54,6 +57,7 @@
   *{box-sizing:border-box}
   body{font-family:system-ui, Arial, sans-serif; background:#F9FAFB; color:var(--text); margin:0}
   .container{width:100%; margin:0; padding:24px var(--pad)}
+
 
   .h1, h1 {
   font-size:20pt;
@@ -83,6 +87,7 @@
   margin:4px 0 14px 0;
 }
 
+
   .progress{display:flex; gap:10px; margin:6px 0 16px 0}
   .dot{
   width:14px;
@@ -92,6 +97,7 @@
   border:1px solid #e5e7eb;
 }
   .dot.active{background:var(--progress-red); border-color:var(--progress-red)}
+
 
   .row{display:grid; grid-template-columns:minmax(84px, var(--label-w)) 1fr; column-gap:var(--gap); align-items:center; margin:10px 0}
   .row>label{
@@ -105,13 +111,17 @@
   .row>input:focus, .row>select:focus{outline:none; border-color:rgba(30,144,255,.8); box-shadow:0 0 0 3px rgba(30,144,255,.18); background:#fff}
   select:invalid{color:#aaa}
 
+
   .actions{padding-left:calc(var(--label-w) + var(--gap)); margin-top:14px; display:flex; gap:10px; justify-content:flex-end}
   button{width:120px; height:42px; font-size:12pt; border:none; border-radius:14px; text-align:center;}
 button:enabled{background:var(--blue); color:#fff; cursor:pointer;}
 button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
 
 
+
+
   .btn-secondary{width:120px; height:42px; font-size:12pt;}
+
 
   /* QUESTIONS */
   .q-item{padding:12px 0;  display:grid; grid-template-columns: 26px 1fr; column-gap:6px; align-items:baseline}
@@ -142,18 +152,22 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   .pill{display:inline-block; width:30px; height:30px; line-height:30px; text-align:center; border:1px solid #cfcfcf; border-radius:50%; margin-right:10px; cursor:pointer; user-select:none; font-size:16px}
   .pill.selected{background:var(--blue); color:#fff}
 
+
   /* SCORE */
   .score-kicker{font-size:10pt; font-weight:400; color:#999999; margin:12px 0 8px 0}
   .score-big{font-size:20pt; font-weight:900; color:#444; margin:0 0 24px 0}
   .gauge{position:relative; height:28px; border-radius:8px; background:linear-gradient(90deg,#ef4444 0%, #f59e0b 35%, #fbbf24 50%, #84cc16 70%, #22c55e 100%);}
   .gauge::after{content:""; position:absolute; top:-8px; bottom:-8px; width:10px; border-radius:6px; background:#444}
 
+
   /* Congrats */
   .big-check{width:120px; height:120px; border-radius:60px; background:var(--blue); display:flex; align-items:center; justify-content:center; margin:16px auto}
   .big-check:after{content:'✔'; color:#fff; font-weight:800; font-size:54px}
   .center{text-align:center}
 
+
   @media (max-width:340px){ .row{grid-template-columns:1fr; row-gap:6px} .actions{padding-left:0} .q-item{grid-template-columns: 26px 1fr;} }
+
 
   /* =========================
      PRINT: Blue-branded template
@@ -161,6 +175,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
      ========================= */
   #pdfReport{display:none}
   @media print{
+
 
 .row>label{
   font-size:11pt;
@@ -171,16 +186,19 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     main, .modal-backdrop{display:none !important}
     #pdfReport{display:block; font-family:Arial, Helvetica, sans-serif; padding:18px 24px}
 
+
     /* ====== CHANGE COLORS HERE (global brand blue) ====== */
     /* Safe: adjust the brand blue for PDF only */
     :root{ --blue:#1E90FF; }
+
 
     /* Title block */
     .pdf-top{display:grid; grid-template-columns: 1fr 220px; gap:16px; align-items:start; margin-bottom:10px}
     .pdf-title{font-size:45px; font-weight:1000; color:var(--blue); margin:0}
     .pdf-sub { font-size:25px; font-weight:600; color:var(--blue); margin:2px 0; line-height:1.2; text-align:left; }
-    .pdf-date { font-size:25px; font-weight:600; color:var(--blue); margin:2px 0; line-height:1.2; text-align:left; }
+    .pdf-date { font-size:18px; font-weight:500; color:var(--blue); margin:2px 0; line-height:1.2; text-align:left; }
     .pdf-divider{height:1px; background:#cfd4dc; margin:8px 0 14px 0}
+
 
     /* ====== SCORE BOX (SAFE TO EDIT) ====== */
     .score-box{
@@ -195,6 +213,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     .score-box .pct{font-size:40px; font-weight:900; margin:4px 0 2px 0}
   .score-box .raw { font-size:20px; font-weight:800; color:#fff !important; margin-bottom:6px; }
  }
+
 
 /* ====== SECTION HEADERS (SAFE TO EDIT) ====== */
 .sec-h { background:var(--blue) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; color:#fff !important; font-weight:800; text-transform:uppercase; padding:6px 10px; border-radius:4px; margin:16px 0 8px 0; }
@@ -213,6 +232,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     td{border:1px solid #d1d5db; font-size:12px; padding:8px; vertical-align:top}
     .muted{color:#666; font-size:11px}
 
+
     /* Statements specifics */
     .st-no{width:6%}
     .st-group{width:18%}
@@ -220,20 +240,28 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     .st-title{font-weight:800}
   }
 
+
   .rec-text{font-size:11pt; font-weight:500; color:#444; margin-top:24px; line-height:1.5;}
+
 
   .group-results-header{font-size:18pt; font-weight:800; color:#444; margin-bottom:8px;}
 
+
   .rec-kicker{font-size:10pt; font-weight:400; color:#999999; margin:12px 0 8px 0}
+
 
   .group-desc{line-height:1.35; margin-top:2px; margin-bottom:14px; color:#666; font-size:.95em;}
 
+
   .score-section{margin-top:40px;}
+
 
   .group-row{padding:2px 0; margin-bottom:0;}
 
+
 /* Phase A, Step 1 final refinement — only horizontal light blue lines */
 @media print {
+
 
   /* Remove horizontal padding for Employee info cells */
   #pdfReport #pdfEmpName,
@@ -242,6 +270,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+
 
   /* Table borders */
   #pdfReport table, 
@@ -256,6 +285,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     border-bottom: none !important;
   }
 }
+
 
 /* Phase A — Side borders removal (print only) */
 @media print {
@@ -280,6 +310,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   #pdfReport td { border-bottom: 0.5px solid #87CEFA !important; }
   #pdfReport tr:last-child td { border-bottom: none !important; }
 }
+
 
 /* Phase A — Set default print page size to A4 */
 @media print {
@@ -312,6 +343,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   }
 }
 
+
 /* PDF: Assessment header bar with three labels aligned to table columns */
 @media print {
   #pdfReport .assess-bar{
@@ -333,6 +365,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   }
 }
 
+
 /* PDF: lock Statements table column widths */
 @media print {
   #pdfReport .statements-table { table-layout: fixed; width: 100%; }
@@ -341,6 +374,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   #pdfReport .statements-table col:nth-child(3) { width: 20%; }
   #pdfReport .statements-table col:nth-child(4) { width: 20%; }
 }
+
 
 /* PDF: lock Information section to 20/30/20/30 total width */
 @media print {
@@ -368,11 +402,13 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   #pdfReport .info-grid .card .value,
   #pdfReport .info-grid .card .kv-value { grid-column: 2; text-align: left; }
 
+
   /* Make sure rows align and wrap properly */
   #pdfReport .info-grid .card > * {
     break-inside: avoid;
   }
 }
+
 
 /* PDF: lock Statements table columns to 10/45/30/15 */
 @media print {
@@ -382,6 +418,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   #pdfReport .statements-table col:nth-child(3) { width: 30%; }
   #pdfReport .statements-table col:nth-child(4) { width: 15%; }
 }
+
 
 /* PDF: Statements header bar with STATEMENTS, GROUP, SCORE */
 @media print {
@@ -394,6 +431,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   #pdfReport .statements-bar .lbl-group { grid-column: 3; text-align: left; }
   #pdfReport .statements-bar .lbl-score { grid-column: 4; text-align: center; }
 }
+
 
 /* PDF: Refine Statements section alignment */
 @media print {
@@ -410,12 +448,14 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   /* Align SCORE over Score col, centered */
   #pdfReport .statements-bar .lbl-score { grid-column: 4; text-align: center; }
 
+
   /* Body cells alignment */
   #pdfReport .statements-table td:nth-child(1) { text-align: left; }   /* NO. */
   #pdfReport .statements-table td:nth-child(2) { text-align: left; }   /* STATEMENT text */
   #pdfReport .statements-table td:nth-child(3) { text-align: left; }   /* GROUP values */
   #pdfReport .statements-table td:nth-child(4) { text-align: center; } /* SCORE values */
 }
+
 
 /* PDF: Fine-tune Statements section header alignment and hide duplicate header rows */
 @media print {
@@ -431,6 +471,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     padding: 0 !important;
   }
 
+
   /* Reaffirm grid alignment */
   #pdfReport .statements-bar {
     display: grid;
@@ -441,11 +482,13 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   #pdfReport .statements-bar .lbl-group { grid-column: 3; text-align: left; }
   #pdfReport .statements-bar .lbl-score { grid-column: 4; text-align: center; }
 
+
   /* Body cells alignment */
   #pdfReport .statements-table td:nth-child(1) { text-align: left; }
   #pdfReport .statements-table td:nth-child(2) { text-align: left; }
   #pdfReport .statements-table td:nth-child(3) { text-align: left; }
   #pdfReport .statements-table td:nth-child(4) { text-align: center; }
+
 
   /* Hide any residual header row (NO/STATEMENT/GROUP/RATING) */
   #pdfReport .statements-table thead,
@@ -456,6 +499,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     display: none !important;
   }
 }
+
 
 /* PDF: Information section row vertical centering and remove bold labels */
 @media print {
@@ -487,6 +531,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   #pdfReport #pdfStatements col:nth-child(3) { width: 30% !important; }
   #pdfReport #pdfStatements col:nth-child(4) { width: 15% !important; }
 
+
   /* Align blue header bar labels with table columns */
   #pdfReport .statements-bar {
     display: grid !important;
@@ -498,6 +543,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   #pdfReport .statements-bar .lbl-stmt { grid-column: 2 !important; text-align: left !important; }
   #pdfReport .statements-bar .lbl-group { grid-column: 3 !important; text-align: left !important; }
   #pdfReport .statements-bar .lbl-score { grid-column: 4 !important; text-align: center !important; }
+
 
   /* Hide the table's header row to avoid duplication under the blue bar */
   #pdfReport #pdfStatements thead,
@@ -549,6 +595,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   }
 }
 
+
 </style><style>
 /* === FINAL fixes v72: Match blue header height for STATEMENTS to other bars (screen + print) === */
 #pdfReport .statements-bar {
@@ -581,7 +628,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
 </select>
 </div>
 <h2 class="section-title">team member information</h2>
-<p class="intro">after you assess yourself a peer will review you. your peer must know you well and worked in BED for at least 12 months</p>
+<p class="intro"> enter the details of the team member you will review. you must know this team member well and have worked in BED for at least 12 months</p>
 <div class="row"><label for="peerName">team member</label><input id="peerName"/></div>
 <div class="row"><label for="peerEmail">email address</label><input id="peerEmail" type="email"/></div>
 <div class="row"><label for="peerHotel">peer location</label>
@@ -603,12 +650,12 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
 <section id="instructions" style="display:none">
 <h2 class="section-title">INSTRUCTIONS</h2>
 <p class="intro">
-      Read each statement and think how the team member acts in these situations. Then select the rating that fits best. Be honest with yourself. The goal is for your friends to know what they're good at and what they can do better
+      Read each statement and think how this team member acts in these situations. Then select the rating that fits best. Be honest and sincere. The goal is for your friends to know what they're good at and what they can do better
     </p>
 <h2 class="section-title">RATING</h2>
 <ul class="scale-list" style="list-style:none; padding:0; margin:10px 0">
 <li class="scale-item" style="display:flex; align-items:center; gap:10px; margin:8px 0; font-size:12pt"><span class="badge" style="width:28px; height:28px; border-radius:50%; background:var(--blue); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-weight:700">1</span> <span>You are not so good at this</span></li>
-<li class="scale-item" style="display:flex; align-items:center; gap:10px; margin:8px 0; font-size:12pt"><span class="badge" style="width:28px; height:28px; border-radius:50%; background:var(--blue); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-weight:700">2</span> <span>You need to be better at this</span></li>
+<li class="scale-item" style="display:flex; align-items:center; gap:10px; margin:8px 0; font-size:12pt"><span class="badge" style="width:28px; height:28px; border-radius:50%; background:var(--blue); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-weight:700">2</span> <span>You can be a lot better at this</span></li>
 <li class="scale-item" style="display:flex; align-items:center; gap:10px; margin:8px 0; font-size:12pt"><span class="badge" style="width:28px; height:28px; border-radius:50%; background:var(--blue); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-weight:700">3</span> <span>You normally do this</span></li>
 <li class="scale-item" style="display:flex; align-items:center; gap:10px; margin:8px 0; font-size:12pt"><span class="badge" style="width:28px; height:28px; border-radius:50%; background:var(--blue); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-weight:700">4</span> <span>You are good at this</span></li>
 <li class="scale-item" style="display:flex; align-items:center; gap:10px; margin:8px 0; font-size:12pt"><span class="badge" style="width:28px; height:28px; border-radius:50%; background:var(--blue); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-weight:700">5</span> <span>You are very good at this</span></li>
@@ -637,7 +684,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
 </div>
 </section>
 <!-- Score -->
-<section id="finish" style="display:none"><div class="score-section"><div class="score-kicker">team member score</div><div class="score-big" id="scorePercent">OVERALL SCORE —%</div><div class="gauge" id="gauge"></div><div class="rec-kicker"></div><div class="rec-text" id="recText">—</div></div>
+<section id="finish" style="display:none"><div class="score-section"><div class="score-kicker">peer reviewer score</div><div class="score-big" id="scorePercent">OVERALL SCORE —%</div><div class="gauge" id="gauge"></div><div class="rec-kicker"></div><div class="rec-text" id="recText">—</div></div>
 <br/>
 <div id="groupResultsContainer" style="margin-top:18px">
 <div class="group-summary">
@@ -681,7 +728,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
 <div class="big-check"></div>
 <div class="center">
  <h3 style="font-size:32px; margin:8px 0 6px 0; color:#444;">peer assessment<br>completed</h3>
-<p style="font-size:16px; font-weight: 500;color:#444; line-height:1.5;">click PDF to download the report<br>please send a copy to your team member
+<p style="font-size:17px; font-weight: 500;color:#444; line-height:1.4;">click PDF to download the report<br>and send a copy to your team member
 </p>
 </div>
   <br>
@@ -699,7 +746,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
 <div class="modal-backdrop" id="eligBackdrop" style="position:fixed; inset:0; background:rgba(0,0,0,.35); display:none; align-items:center; justify-content:center; z-index:50">
 <div class="modal" style="width:min(92vw,520px); background:#fff; border-radius:18px; padding:20px; box-shadow:0 20px 60px rgba(0,0,0,.25)">
 <h3 style="margin:0 0 10px 0; font-size:18px">please confirm</h3>
-<p style="margin:0 0 18px 0; font-size:16px; line-height:1.5; color:#222">my peer reviewer knows me well and has worked in BED for at least 12 months</p>
+<p style="margin:0 0 18px 0; font-size:16px; line-height:1.5; color:#222">I know this team member well and I worked in BED for at least 12 months</p>
 <div class="row-btns" style="display:flex; justify-content:flex-end; gap:10px">
 <button class="btn-secondary" id="eligCancel">Cancel</button>
 <button id="eligOk">OK</button>
@@ -711,8 +758,8 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   <div class="pdf-top">
     <div>
        <div class="pdf-title">BED HOSPITALITY 2.0</div>
-  <div class="pdf-sub">PEER REVIEWER REPORT</div>
-  <div class="pdf-date" id="pdfDate">ASSESSMENT DATE —</div>
+  <div class="pdf-sub">peer reviewer report</div>
+  <div class="pdf-date" id="pdfDate">assessment date —</div>
     </div>
     <div class="score-box">
       <div class="pct" id="pdfTotalPct">—%</div>
@@ -720,7 +767,9 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     </div>
   </div>
 
+
   <div class="pdf-divider"></div>
+
 
 <!-- Information section -->
 <div class="sec-h assess-bar"><span class="lbl-group">INFORMATION</span></div>
@@ -750,9 +799,12 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
 </div>
 
 
+
+
 <!--  section -->
 <div class="sec-h assess-bar"><span class="lbl-group">OVERALL SCORE</span></div>
 <div id="pdfBandText" style="margin-top:10px;font-size:16px;font-weight:600;color:#434343;width:100%;display:block;text-align:left;line-height:1.7;"></div>
+
 
 <!-- Score by Group section -->
 <div class="sec-h assess-bar"><span class="lbl-group">SCORE BY GROUP</span></div>
@@ -761,6 +813,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     <tbody id="pdfGroupRows"><!-- rows injected --></tbody>
   </table>
 </div>
+
 
   <!-- Statements -->
   <div class="sec-h statements-bar"><span class="lbl-stmt">STATEMENTS</span><span class="lbl-group">GROUP</span><span class="lbl-score">SCORE</span></div>
@@ -776,6 +829,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   const S = {answers:{}, questions:[], groups:[]}; window.__S = S;
   const el = id => document.getElementById(id);
   const sections = ['welcome','instructions','q1','q2','finish','congrats'];
+
 
   function show(id){
     sections.forEach(s => (document.getElementById(s).style.display = (s===id ? 'block' : 'none')));
@@ -794,7 +848,9 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   }
   setProgress(1);
 
+
   function stripLeadingNumber(t){ return String(t||'').replace(/^\\s*\\d+\\.\\s*/, ''); }
+
 
   function makeQ(q, ord){
     const wrap = document.createElement('div');
@@ -808,6 +864,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     wrap.appendChild(body);
     return wrap;
   }
+
 
   async function loadQuestions(){
     try{
@@ -827,10 +884,12 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     }
   }
 
+
   function validateWelcome() {
     const allFilled = ['nick','email','hotel','peerName','peerEmail','peerHotel'].every(id => el(id).value && el(id).value.trim()!=='');
     el('toInstructions').disabled = !allFilled;
   }
+
 
   function computeTotals(){
     const ids = (S.questions||[]).map(q=>q.id);
@@ -841,6 +900,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     const pct = answered.length ? Math.round(25 + ((avg - 1) / 4) * 75) : 25;
     return {raw, max, pct};
   }
+
 
   function computeGroupPercents(){
     const byGroup = {};
@@ -860,9 +920,11 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     return res;
   }
 
+
   function groupDescMap(){
     const m = {}; (S.groups||[]).forEach(g=>m[g.name]=g.description||''); return m;
   }
+
 
   function renderGroupResults(){
     const holder = document.getElementById('groupResults');
@@ -881,11 +943,13 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
     holder.innerHTML = rows;
   }
 
+
   // Navigation + eligibility modal
   const _eligOkBtn = document.getElementById('eligOk');
   const _eligCancelBtn = document.getElementById('eligCancel');
   function openModal(){ document.getElementById('eligBackdrop').style.display='flex'; }
   function closeModal(){ document.getElementById('eligBackdrop').style.display='none'; }
+
 
   el('toInstructions').onclick = () => {
     openModal();
@@ -899,6 +963,7 @@ button:disabled{background:#ccc; color:#666; cursor:not-allowed;}
   el('backToInstructions').onclick = () => show('instructions');
   el('toQ2').onclick = () => { const l=el('list-q2'); l.innerHTML=''; (S.questions||[]).slice(18,35).forEach((q,i)=>l.appendChild(makeQ(q,19+i))); show('q2'); };
   el('backToQ1').onclick = () => show('q1');
+
 
   el('submitAll').onclick = () => {
     const totals = computeTotals();
@@ -919,10 +984,13 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     show('finish');
   };
 
+
   el('backToQ2').onclick = () => show('q2');
   el('nextToPeer').onclick = () => show('congrats');
 
+
   el('congratsBack').onclick = () => show('finish');
+
 
   // Validation
   ['nick','email','hotel','peerName','peerEmail','peerHotel'].forEach(id => {
@@ -930,6 +998,9 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     el(id).addEventListener('change', validateWelcome);
   });
   validateWelcome();
+
+
+
 
   // Subheader update
   const subheaderEl = document.querySelector('p.subheader');
@@ -939,9 +1010,10 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     if (!subheaderEl) return;
     if (id === 'q1') { subheaderEl.textContent = 'STATEMENTS PART ONE'; } 
     else if (id === 'q2') { subheaderEl.textContent = 'STATEMENTS PART TWO'; } 
-    else if (id === 'congrats') { subheaderEl.textContent = 'TEAM MEMBER FORM'; } 
-    else { subheaderEl.textContent = 'TEAM MEMBER FORM'; }
+    else if (id === 'congrats') { subheaderEl.textContent = 'PEER REVIEWER FORM'; } 
+    else { subheaderEl.textContent = 'PEER REVIEWER FORM'; }
   };
+
 
   function formatDate(){
   try {
@@ -955,7 +1027,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
   function buildPdfReport(){
     // Date + score box
     const totals = computeTotals();
-    document.getElementById('pdfDate').textContent = 'REPORT DATE ' + formatDate();
+    document.getElementById('pdfDate').textContent = 'assessment date ' + formatDate();
     document.getElementById('pdfTotalPct').textContent = (isFinite(totals.pct) ? totals.pct : '—') + '%';
    document.getElementById('pdfTotalRaw').textContent =(totals.raw || 0) + ' of ' + ((S.questions || []).length * 5 || 175);
 // === PDF recommendation band (under the date) ===
@@ -973,10 +1045,12 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     rec = 'Awesome! Your understanding of BED is an inspiration for others. Continue to lead others by example';
   }
 
+
   recTarget.innerHTML = 
     "<div style='line-height:1.8; font-size:14px; color:#434343; font-weight:400;'>Your overall score is " 
     + totals.pct + "% — so what does it mean?</div>" +
     "<div style='font-size:14px; color:#434343; font-weight:600;'>" + rec + "</div>";
+
 
   // Info
   document.getElementById('pdfEmpName').textContent = document.getElementById('nick').value || '';
@@ -986,6 +1060,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
   document.getElementById('pdfPeerEmail').textContent = document.getElementById('peerEmail').value || '';
   document.getElementById('pdfPeerHotel').textContent = document.getElementById('peerHotel').value || '';
 })();
+
 
     // Group rows
     const gp = computeGroupPercents();
@@ -1001,6 +1076,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
       tr.appendChild(tdName); tr.appendChild(tdPct); tr.appendChild(tdDesc);
       body.appendChild(tr);
     });
+
 
     // Statements table
     const tb = document.querySelector('#pdfStatements tbody');
@@ -1018,7 +1094,9 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     });
   }
 
+
   document.getElementById('congratsPdf').onclick = () => { buildPdfReport(); window.print(); };
+
 
   // Init
   loadQuestions();
@@ -1041,6 +1119,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
   function isQ1Complete(){ return allAnswered(qIdsFor([0,18])); }
   function isQ2Complete(){ return allAnswered(qIdsFor([18,35])); }
 
+
   // Hook pill clicks to re-evaluate states
   document.addEventListener('click', function(ev){
     var t = ev.target;
@@ -1051,6 +1130,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
       if(b2) b2.disabled = !isQ2Complete();
     }
   }, true);
+
 
   // After entering Q1/Q2, sync button states
   var toQ1 = document.getElementById('toQ1');
@@ -1063,6 +1143,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     };
   }
 
+
   var toQ2 = document.getElementById('toQ2');
   if(toQ2){
     var prevToQ2 = toQ2.onclick;
@@ -1072,6 +1153,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
       if(sub) sub.disabled = !isQ2Complete();
     };
   }
+
 
   // Hard guard against advancing when incomplete
   document.addEventListener('click', function(ev){
@@ -1099,6 +1181,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
   function isQ1Complete(){ return allAnswered(qIdsFor([0,18])); }
   function isQ2Complete(){ return allAnswered(qIdsFor([18,35])); }
 
+
   function setState(){
     try{
       var q1Visible = document.getElementById('q1') && document.getElementById('q1').style.display !== 'none';
@@ -1110,6 +1193,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     }catch(_){}
   }
 
+
   // Hook pill clicks to re-evaluate states
   document.addEventListener('click', function(ev){
     var t = ev.target;
@@ -1117,6 +1201,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
       setState();
     }
   }, true);
+
 
   // After entering Q1/Q2, sync button states
   var toQ1 = document.getElementById('toQ1');
@@ -1128,6 +1213,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     };
   }
 
+
   var toQ2 = document.getElementById('toQ2');
   if(toQ2){
     var prevToQ2 = toQ2.onclick;
@@ -1136,6 +1222,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
       setState();
     };
   }
+
 
   // Wrap show() to always refresh states after page changes (without touching visuals)
   if(typeof window.show === 'function'){
@@ -1146,12 +1233,14 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     };
   }
 
+
   // Hard guard against advancing when incomplete
   document.addEventListener('click', function(ev){
     var id = ev.target && ev.target.id;
     if(id === 'toQ2' && !isQ1Complete()){ ev.preventDefault(); ev.stopPropagation(); }
     if(id === 'submitAll' && !isQ2Complete()){ ev.preventDefault(); ev.stopPropagation(); }
   }, true);
+
 
   // Initial sync
   document.addEventListener('DOMContentLoaded', setState);
@@ -1175,6 +1264,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
   function q1Done(){ return uniqueAnsweredCount('list-q1') >= 18; }
   function q2Done(){ return uniqueAnsweredCount('list-q2') >= 17; }
 
+
   function sync(){
     try{
       var q1Visible = document.getElementById('q1') && document.getElementById('q1').style.display !== 'none';
@@ -1186,6 +1276,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     }catch(_){}
   }
 
+
   // Monitor pill clicks
   document.addEventListener('click', function(ev){
     var t = ev.target;
@@ -1195,11 +1286,13 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     }
   }, true);
 
+
   // Wrap show() to re-sync after page changes
   if(typeof window.show === 'function'){
     var oldShow = window.show;
     window.show = function(id){ oldShow(id); setTimeout(sync, 0); };
   }
+
 
   // Hard guard
   document.addEventListener('click', function(ev){
@@ -1207,6 +1300,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     if(id === 'toQ2' && !q1Done()){ ev.preventDefault(); ev.stopPropagation(); }
     if(id === 'submitAll' && !q2Done()){ ev.preventDefault(); ev.stopPropagation(); }
   }, true);
+
 
   // Initial sync
   document.addEventListener('DOMContentLoaded', function(){ setTimeout(sync, 0); });
@@ -1292,6 +1386,8 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
 <!-- === End drop-in === -->
 
 
+
+
 <script>
 (function(){
   // Map old->new
@@ -1303,6 +1399,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
   };
   const TARGET_ORDER = ["hospitality skills","BED competencies","taking ownership","collaboration"];
 
+
   function normalizedOrder(S){
     const byName = new Map();
     (S.groups||[]).forEach(g => byName.set(g.name, g));
@@ -1312,6 +1409,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     (S.groups||[]).forEach(g => { if (!out.includes(g.name)) out.push(g.name); });
     return out;
   }
+
 
   // Override renderGroupResults
   const _render = window.renderGroupResults;
@@ -1336,6 +1434,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
       holder.appendChild(row);
     });
   };
+
 
   // Override buildPdfReport
   const _buildPdf = window.buildPdfReport;
@@ -1364,6 +1463,8 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
 </script>
 
 
+
+
 <style>
   /* Final vFinal: scoring page group line layout */
   .group-line{display:flex; justify-content:space-between; align-items:center; font-weight:600; margin:2px 0;}
@@ -1379,6 +1480,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
   };
   const ORDER = ["hospitality skills","BED competencies","taking ownership","collaboration"];
 
+
   function normalizeAll(){
     const S = window.__S || window.S || {};
     if (Array.isArray(S.groups)) S.groups.forEach(g=>{ if(MAP[g.name]) g.name = MAP[g.name]; });
@@ -1390,6 +1492,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     names.forEach(n=>{ if(!seen.has(n)) out.push(n); });
     return out;
   }
+
 
   // Replace scoring-page renderer
   window.renderGroupResults = function(){
@@ -1412,11 +1515,13 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     });
   };
 
+
   // Replace PDF builder (keeps original totals/date/etc. from existing function)
   const _origBuild = window.buildPdfReport;
   window.buildPdfReport = function(){
     normalizeAll();
     if (typeof _origBuild === 'function') _origBuild(); // lays out date, totals, info, statements
+
 
     const S = window.__S || window.S || {};
     const body = document.getElementById('pdfGroupRows');
@@ -1454,13 +1559,16 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     "collaboration":"Building trust, communicating clearly, and helping across the BED community."
   };
 
+
   function normName(n){ return MAP[n] || n; }
+
 
   function ensureNormalized(){
     const S = window.__S || window.S || {};
     if (Array.isArray(S.questions)) S.questions.forEach(q => { q.group = normName(q.group); });
     if (Array.isArray(S.groups))   S.groups.forEach(g => { g.name = normName(g.name); g.description = g.description || DESC_FALLBACK[g.name] || ''; });
   }
+
 
   // Override computeGroupPercents to derive from questions directly
   window.computeGroupPercents = function(){
@@ -1483,6 +1591,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     return out;
   };
 
+
   function orderedNames(){
     ensureNormalized();
     const S = window.__S || window.S || {};
@@ -1498,6 +1607,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     return arr.sort((a,b)=>idx(a)-idx(b));
   }
 
+
   function descMap(){
     ensureNormalized();
     const S = window.__S || window.S || {};
@@ -1507,6 +1617,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     Object.keys(DESC_FALLBACK).forEach(k => { if(!(k in d)) d[k]=DESC_FALLBACK[k]; });
     return d;
   }
+
 
   // Override renderers
   window.renderGroupResults = function(){
@@ -1525,6 +1636,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
       holder.appendChild(block);
     });
   };
+
 
   const _origBuild = window.buildPdfReport;
   window.buildPdfReport = function(){
@@ -1545,6 +1657,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     });
   };
 
+
   // Ensure our overrides are active BEFORE submitAll runs
   document.addEventListener('DOMContentLoaded', ensureNormalized);
   // Also prime right before clicking submit
@@ -1555,6 +1668,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
   if (pdf) pdf.addEventListener('click', ensureNormalized, {capture:true});
 })();
 </script>
+
 
 <script>
 // === Final hot-fix v3 (must be the last script) ===
@@ -1574,7 +1688,9 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
   };
   const norm = n => MAP[n] || n;
 
+
   function S(){ return (window.__S || window.S || {}); }
+
 
   function ensureNormalized(){
     const s = S();
@@ -1584,6 +1700,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
       g.description = g.description || DESC[g.name] || "";
     });
   }
+
 
   function computeGroupPercents(){
     ensureNormalized();
@@ -1600,6 +1717,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     return out;
   }
 
+
   function orderedNames(){
     const names = new Set();
     (S().questions||[]).forEach(q=>{ const n = norm(q.group); if(n) names.add(n); });
@@ -1607,6 +1725,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     const arr = Array.from(names);
     return arr.sort((a,b)=> (ORDER.indexOf(a)+1||999) - (ORDER.indexOf(b)+1||999));
   }
+
 
   // --- FORCE our renderers (overwrite anything defined earlier)
   window.renderGroupResults = function(){
@@ -1626,6 +1745,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     });
   };
 
+
   const _build = window.buildPdfReport;
   window.buildPdfReport = function(){
     ensureNormalized();
@@ -1644,6 +1764,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
       body.appendChild(tr);
     });
   };
+
 
   // Re-normalize and re-render at the exact moments that matter
   window.addEventListener('load', ensureNormalized);
@@ -1668,6 +1789,7 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     return `${dd}${mon[d.getMonth()]}${d.getFullYear()}`;
   }
 
+
   // Try multiple sources to get overall % (robust)
   function getOverallPct(){
     try { if (typeof window.computeOverallPercent === 'function') {
@@ -1682,6 +1804,12 @@ else rec='Awesome! Your understanding of BED is an inspiration for others. Conti
     return 0;
   }
 
+
 </script>
 </body>
 </html>
+
+
+
+
+
