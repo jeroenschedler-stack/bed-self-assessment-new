@@ -19,7 +19,7 @@
   ],
   "questions": [
     {
-  "id": 1,
+      "id": 1,
       "statement": "You answer very quickly to guest messages",
       "subtext": "You often check and reply right away",
       "group": "hospitality skills"
@@ -62,13 +62,13 @@
     },
     {
       "id": 8,
-      "statement": "You don’t say that check-in time is 14:00",
+      "statement": "You don't say that check-in time is 14:00",
       "subtext": "Guests can check-in when the room is ready",
       "group": "BED competencies"
     },
     {
       "id": 9,
-      "statement": "You don’t show stress when there is a problem",
+      "statement": "You don't show stress when there is a problem",
       "subtext": "You know that makes guests really worry",
       "group": "BED competencies"
     },
@@ -93,7 +93,7 @@
     {
       "id": 13,
       "statement": "You scan every guest every time",
-      "subtext": "You don’t look at a group but at each individual",
+      "subtext": "You don't look at a group but at each individual",
       "group": "BED competencies"
     },
     {
@@ -122,7 +122,7 @@
     },
     {
       "id": 18,
-      "statement": "It’s annoying when a room key doesn’t work",
+      "statement": "It's annoying when a room key doesn't work",
       "subtext": "You go up to make sure the new key works",
       "group": "hospitality skills"
     },
@@ -135,13 +135,13 @@
     {
       "id": 20,
       "statement": "You often give your friends honest feedback",
-      "subtext": "You’re happy to help them to grow",
+      "subtext": "You're happy to help them to grow",
       "group": "collaboration"
     },
     {
       "id": 21,
       "statement": "You like it when your friends give you honest feedback",
-      "subtext": "You’re happy they help you to grow",
+      "subtext": "You're happy they help you to grow",
       "group": "collaboration"
     },
     {
@@ -159,7 +159,7 @@
     {
       "id": 24,
       "statement": "You have peeled your own onion",
-      "subtext": "You don’t act. Usually you show your true self",
+      "subtext": "You don't act. Usually you show your true self",
       "group": "BED competencies"
     },
     {
@@ -171,7 +171,7 @@
     {
       "id": 26,
       "statement": "Your messages look like you wrote them",
-      "subtext": "You don’t copy AI because guests will know",
+      "subtext": "You don't copy AI because guests will know",
       "group": "BED competencies"
     },
     {
@@ -183,7 +183,7 @@
     {
       "id": 28,
       "statement": "You never gossip. You signed I Promise",
-      "subtext": "You don’t talk badly when someone’s not here",
+      "subtext": "You don't talk badly when someone's not here",
       "group": "collaboration"
     },
     {
@@ -213,7 +213,7 @@
     {
       "id": 33,
       "statement": "You fix issues yourself",
-      "subtext": "You follow up later to make sure it’s fixed",
+      "subtext": "You follow up later to make sure it's fixed",
       "group": "taking ownership"
     },
     {
