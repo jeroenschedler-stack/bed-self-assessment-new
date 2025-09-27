@@ -634,7 +634,7 @@
             <div class="progress" id="progressHeader"><span class="dot"></span><span class="dot"></span><span class="dot"></span> <span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
             <!-- PAGE 1 -->
             <section id="welcome">
-                <h2 class="section-title">team member information</h2>
+                <h2 class="section-title">peer reviewer information</h2>
                 <div class="row"><label for="nick">your name</label><input id="nick" /></div>
                 <div class="row"><label for="email">your email</label><input id="email" type="email" /></div>
                 <div class="row">
@@ -649,10 +649,10 @@
                         <option>BED Support</option>
                     </select>
                 </div>
-                <h2 class="section-title">peer reviewer information</h2>
-                <p class="intro">after you assess yourself a peer will review you. Choose any peer who knows you well and has worked in BED for at least 12 months</p>
-                <div class="row"><label for="peerName">peer reviewer</label><input id="peerName" /></div>
-                <div class="row"><label for="peerEmail">email peer</label><input id="peerEmail" type="email" /></div>
+                <h2 class="section-title">team member information</h2>
+                <p class="intro">enter the details of the team member you will review. you must know this team member well and have worked in BED for at least 12 months</p>
+                <div class="row"><label for="peerName">team member</label><input id="peerName" /></div>
+                <div class="row"><label for="peerEmail">email address</label><input id="peerEmail" type="email" /></div>
                 <div class="row">
                     <label for="peerHotel">peer location</label>
                     <select id="peerHotel" required="">
@@ -673,13 +673,14 @@
             <section id="instructions" style="display: none;">
                 <h2 class="section-title">INSTRUCTIONS</h2>
                 <p class="intro">
-                    Read each statement and think how you act in these situations. Then select the rating that best fits you. Be honest with yourself. The goal is to know what you're good at and what you can do better
+                    Read each statement and think how this team member acts in these situations. Then select the rating that fits best. Be honest and sincere. The goal is for your friends to know what they're good at and what they can do
+                    better
                 </p>
                 <h2 class="section-title">RATING</h2>
                 <ul class="scale-list" style="list-style: none; padding: 0; margin: 10px 0;">
                     <li class="scale-item" style="display: flex; align-items: center; gap: 10px; margin: 8px 0; font-size: 12pt;">
                         <span class="badge" style="width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-weight: 700;">1</span>
-                        <span>I am not so good at this</span>
+                        <span>You are not so good at this</span>
                     </li>
                     <li class="scale-item" style="display: flex; align-items: center; gap: 10px; margin: 8px 0; font-size: 12pt;">
                         <span class="badge" style="width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-weight: 700;">2</span>
@@ -687,15 +688,15 @@
                     </li>
                     <li class="scale-item" style="display: flex; align-items: center; gap: 10px; margin: 8px 0; font-size: 12pt;">
                         <span class="badge" style="width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-weight: 700;">3</span>
-                        <span>I am normal at this</span>
+                        <span>You normally do this</span>
                     </li>
                     <li class="scale-item" style="display: flex; align-items: center; gap: 10px; margin: 8px 0; font-size: 12pt;">
                         <span class="badge" style="width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-weight: 700;">4</span>
-                        <span>I am good at this</span>
+                        <span>You are good at this</span>
                     </li>
                     <li class="scale-item" style="display: flex; align-items: center; gap: 10px; margin: 8px 0; font-size: 12pt;">
                         <span class="badge" style="width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-weight: 700;">5</span>
-                        <span>I am very good at this</span>
+                        <span>You are very good at this</span>
                     </li>
                 </ul>
                 <br />
@@ -776,7 +777,7 @@
         <div class="modal-backdrop" id="eligBackdrop" style="position: fixed; inset: 0; background: rgba(0, 0, 0, 0.35); display: none; align-items: center; justify-content: center; z-index: 50;">
             <div class="modal" style="width: min(92vw, 520px); background: #fff; border-radius: 18px; padding: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);">
                 <h3 style="margin: 0 0 10px 0; font-size: 18px;">please confirm</h3>
-                <p style="margin: 0 0 18px 0; font-size: 16px; line-height: 1.5; color: #222;">my peer reviewer knows me well and worked in BED for at least 12 months</p>
+                <p style="margin: 0 0 18px 0; font-size: 16px; line-height: 1.5; color: #222;">I know this team member well and I worked in BED for at least 12 months</p>
                 <div class="row-btns" style="display: flex; justify-content: flex-end; gap: 10px;">
                     <button class="btn-secondary" id="eligCancel">Cancel</button>
                     <button id="eligOk">OK</button>
