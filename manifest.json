@@ -1,6 +1,6 @@
 {
-  "name": "BED Self-Assessment",
-  "short_name": "BED SAR",
+  "name": "BED Peer Review Form",
+  "short_name": "BED Peer",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#FFFFFF",
